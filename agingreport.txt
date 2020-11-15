@@ -1,0 +1,17 @@
+SQL> @t:\agingreport.txt
+SQL> @t:\agingreport.sql
+
+****Aging report****
+
+Today's date: 10-DEC-19                                                                                                                                                                                 
+
+
+
+           ORDER     ORDER                  Product      Quantity       Unit      Total  Days                                                                                                           
+   ORDERID DATE      STATUS      PRODUCTID  Description   Ordered      Price     Amount  Open                                                                                                           
+---------- --------- ----------- ---------- ------------ -------- ---------- ---------- -----                                                                                                           
+      1159 01-NOV-19 Open        p2         pen                12      $1.20     $14.40    39                                                                                                           
+      1160 20-NOV-19 Open        p4         notesbook          30      $2.00     $60.00    20                                                                                                           
+      1162 25-NOV-19 Open        p5         books              14      $2.50     $35.00    15                                                                                                           
+      1163 10-DEC-19 Open        p2         pen                20      $1.20     $24.00     0                                                                                                           
+SQL> spool off

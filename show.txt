@@ -1,0 +1,42 @@
+SQL> @t:\show.sql
+*****Show Order Details*****
+
+
+Please enter order ID:1165
+
+Order Status: Open                                                                                                                                                                                      
+
+
+phan,Vivian                                                                                                                                                                                             
+
+101 fifth ave                                                                                                                                                                                           
+
+Ca45621                                                                                                                                                                                                 
+
+(111)111-1111                                                                                                                                                                                           
+
+
+ProductID: p2                                                                                                                                                                                           
+
+Product Name: pen                                                                                                                                                                                       
+
+Unit Price:      $1.20                                                                                                                                                                                  
+
+Quantity Ordered:       23                                                                                                                                                                              
+
+Total:     $27.60                                                                                                                                                                                       
+
+
+Order Date: 10-DEC-19                                                                                                                                                                                   
+
+Shipped Date:                                                                                                                                                                                           
+
+
+Shipping Warehouse: LA                                                                                                                                                                                  
+
+456 Los Angeles                                                                                                                                                                                         
+
+CA90254                                                                                                                                                                                                 
+
+(234)234-2345                                                                                                                                                                                           
+SQL> spool off

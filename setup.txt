@@ -1,0 +1,44 @@
+SQL> @t:\setup.txt
+SQL> @t:\setup.sql
+
+CUSTOMERID FIRSTNAME                      LASTNAME                       ADDRESS                        STATE ZIP          PHONE                                                                        
+---------- ------------------------------ ------------------------------ ------------------------------ ----- ------- ----------                                                                        
+       101 Jason                          Ngo                            8282 miami cir                 CA    92541   7143621773                                                                        
+       102 Vivian                         phan                           101 fifth ave                  Ca    45621   1111111111                                                                        
+       103 Cody                           pham                           123 Oregon str                 OR    58462   2222222222                                                                        
+       104 Steve                          Pushes                         9242 gale ave                  AR    14785   3333333333                                                                        
+       105 andy                           Wen                            789 Madrid ave                 WA    45698   4444444444                                                                        
+
+           Product                                                                                                                                                                                      
+PRODUCTID  Description       PRICE                                                                                                                                                                      
+---------- ------------ ----------                                                                                                                                                                      
+p1         pencil                1                                                                                                                                                                      
+p2         pen                 1.2                                                                                                                                                                      
+p3         eraser             1.15                                                                                                                                                                      
+p4         notesbook             2                                                                                                                                                                      
+p5         books               2.5                                                                                                                                                                      
+
+WAREHOUSECODE   ADDRESS                        STATE ZIP          PHONE                                                                                                                                 
+--------------- ------------------------------ ----- ------- ----------                                                                                                                                 
+OC              123 Orange County              CA    93214   1231231234                                                                                                                                 
+LA              456 Los Angeles                CA    90254   2342342345                                                                                                                                 
+IRV             567 Irvine                     CA    91376   5675675678                                                                                                                                 
+
+                           Quantity                                                                                                                                                                     
+PRODUCTID  WAREHOUSECODE    Ordered                                                                                                                                                                     
+---------- --------------- --------                                                                                                                                                                     
+p1         OC                   100                                                                                                                                                                     
+p2         LA                   150                                                                                                                                                                     
+p3         IRV                   90                                                                                                                                                                     
+p4         LA                   180                                                                                                                                                                     
+p5         OC                    30                                                                                                                                                                     
+
+           ORDER                           Quantity       Unit                 ORDER                                                                                                                    
+   ORDERID DATE      CUSTOMERID PRODUCTID   Ordered      Price WAREHOUSECODE   STATUS      SHIPDATE                                                                                                     
+---------- --------- ---------- ---------- -------- ---------- --------------- ----------- ---------                                                                                                    
+      1111 12-OCT-19        101 p1               12      $1.00 OC              Shipped     14-OCT-19                                                                                                    
+      1112 22-OCT-19        102 p2               15      $1.20 LA              Shipped     25-OCT-19                                                                                                    
+      1113 25-OCT-19        103 p3               14      $1.15 IRV             Shipped     27-OCT-19                                                                                                    
+      1114 30-OCT-19        104 p4              200      $2.00 LA              Rejected                                                                                                                 
+      1115 15-NOV-19        105 p5               25      $2.50 OC              In Process                                                                                                               
+SQL> spool off

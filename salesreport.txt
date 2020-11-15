@@ -1,0 +1,15 @@
+SQL> @t:\salesreport.sql
+
+*****Sales Report*****
+
+           Product                          No Of       TOTAL        Total      
+PRODUCTID   Name                MONTH       Orders        QTY       Amount      
+---------- -------------------- ------- ---------- ---------- ------------      
+p1         pencil               10/2019          1         12       $12.00      
+p1         pencil               12/2019          1         14       $14.00      
+p2         pen                  10/2019          1         15       $18.00      
+p3         eraser               10/2019          1         14       $16.10      
+p3         eraser               12/2019          1         30       $34.50      
+p4         notesbook            10/2019          1        200      $400.00      
+p5         books                11/2019          1         25       $62.50      
+SQL> spool off
